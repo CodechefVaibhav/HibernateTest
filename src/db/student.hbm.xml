@@ -17,5 +17,8 @@
 		<property name="age" type="java.lang.Integer">
 			<column name="AGE" length="11" not-null="true"/>
 		</property>
+		
+		<one-to-one name="studentAccountObj" class="db.StudentAccount" cascade="all" constrained="true" >
+		</one-to-one>
 	</class>
 </hibernate-mapping>

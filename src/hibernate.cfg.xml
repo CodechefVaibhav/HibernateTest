@@ -13,11 +13,18 @@
         <property name="connection.password"></property>
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="myeclipse.connection.profile">com.mysql.jdbc.Driver</property>
+        <!--
+        The Following exception is generated when the below statement is missing 
+        org.hibernate.exception.SQLGrammarException: could not fetch initial value 
+        for increment generator
+         -->
+        <property name="hbm2ddl.auto">update</property>
         <property name="myeclipse.connection.profile">
 		MySQL Connector/J
 		</property>
-        
+         	 	
         <mapping resource="db/student.hbm.xml" />
+    	<mapping resource="db/studentaccount.hbm.xml" />
     
     </session-factory>
 

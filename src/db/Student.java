@@ -4,6 +4,7 @@ public class Student {
 	private int id;
 	private String name;
 	private int age;
+	private StudentAccount studentAccountObj = null;
 	
 	/** default constructor */
 	public Student()
@@ -53,6 +54,14 @@ public class Student {
 	 */
 	public void setAge(int age) {
 		this.age = age;
+	}
+
+	public StudentAccount getStudentAccountObj() {
+		return studentAccountObj;
+	}
+
+	public void setStudentAccountObj(StudentAccount studentAccountObj) {
+		this.studentAccountObj = studentAccountObj;
 	}
 	
 	

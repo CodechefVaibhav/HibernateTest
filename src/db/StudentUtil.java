@@ -38,7 +38,15 @@ public class StudentUtil {
 	
 	public static void main(String... ag)
 	{
-		saveStudent(new Student("ShyamLal", 55));
+		Student stu = new Student();
+		stu.setAge(100);
+		stu.setName("Hatim");
+		StudentAccount account = new StudentAccount();
+		account.setSubjects("physics,maths");
+		account.setStudentObj(stu);
+		stu.setStudentAccountObj(account);
+		//saveStudent(new Student("ShyamLal", 55));
+		saveStudent(stu);
 		
 	}
 }
